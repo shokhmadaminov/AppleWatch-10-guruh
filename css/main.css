@@ -202,6 +202,64 @@ body {
     padding: 12px 38.5px;
 }
 
+/* FEATURES SECTION STYLES */
+.features-section-section {
+    border-top: 2px solid #ddd;
+    padding: 70px 0;
+}
+.features-section-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.features-section-item {
+    width: 280px;
+}
+.features-section-item:not(:last-child) {
+    padding-right: 20px;
+    box-sizing: content-box;
+}
+.features-section-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.features-section-text {
+    margin-bottom: 20px;
+}
+.features-section-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    display: inline-block;
+    box-shadow: 18px 0px #ddd,
+    36px 0px #ddd;
+}
+.features-section-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: var(--brand-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+}
+.features-section-link::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--brand-color);
+    margin-right: 10px;
+    transition: width 0.3s ease;
+}
+.features-section-link:hover::before {
+    width: 50px;
+}
+
 
 /* RETINA BGI */
 @media
