@@ -279,6 +279,26 @@ body {
     object-fit: cover;
 }
 
+/* MAIN BOTTOM SECTION STYLES */
+.main-bottom-section {
+    padding: 240px 0;
+    background-image: url("../images/jpg/main-bottom-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.main-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-bottom-text-color {
+    color: #fff;
+    border-left-color: #fff;
+}
+.main-bottom-section-btn {
+    padding: 12px 46px;
+}
+
 
 /* RETINA BGI */
 @media
@@ -290,5 +310,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .intro-section {
         background-image: url("../images/png/intro-bg@2x.png");
+    }
+    .main-bottom-section {
+        background-image: url("../images/jpg/main-bottom-bg@2x.jpg");
     }
 }
