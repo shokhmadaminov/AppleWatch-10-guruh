@@ -260,6 +260,25 @@ body {
     width: 50px;
 }
 
+/* BRAND SECTION STYLES */
+.brand-section {
+    padding: 70px 0;
+}
+.brand-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-section-btn {
+    padding: 12px 90px;
+}
+.brand-section-img {
+    width: 400px;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
 
 /* RETINA BGI */
 @media
