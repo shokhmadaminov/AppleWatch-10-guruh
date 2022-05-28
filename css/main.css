@@ -22,6 +22,7 @@
 :root {
     --site-font: "Roboto", "Arial", sans-serif;
     --brand-color: #ea625c;
+    --brand-hover-color: #c9514c;
     --text-color: #333;
     --seven-color: #777;
     --second-color: #222;
@@ -53,6 +54,7 @@ body {
     line-height: 24px;
     color: var(--text-color);
 }
+/* CONTAINER STYLES */
 .container {
     width: 100%;
     max-width: 1040px;
@@ -60,6 +62,38 @@ body {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+/* INFO CONTENT STYLES */
+.info-content {
+    width: 100%;
+    max-width: 490px;
+}
+.info-content-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.info-content-text {
+    font-size: 16px;
+    color: var(--seven-color);
+    border-left: 3px solid #888;
+    padding-left: 37px;
+    margin-bottom: 30px;
+}
+.info-content-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    display: inline-block;
+}
+.info-content-btn:hover {
+    background-color: var(--brand-hover-color);
 }
 
 
@@ -148,4 +182,36 @@ body {
 }
 .site-header-form:hover::after {
     width: 100%;
+}
+
+/* SITE MAIN STYLES */
+.site-main {
+    flex-grow: 1;
+}
+
+/* INTRO SECTION STYLES */
+.intro-section {
+    padding-top: 140px;
+    padding-bottom: 185px;
+    background-image: url("../images/png/intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 541px) bottom;
+}
+.intro-section-btn {
+    padding: 12px 38.5px;
+}
+
+
+/* RETINA BGI */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .intro-section {
+        background-image: url("../images/png/intro-bg@2x.png");
+    }
 }
